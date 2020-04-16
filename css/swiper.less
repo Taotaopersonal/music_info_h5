@@ -1,0 +1,33 @@
+.swiper-wrapper{
+    width: 500%;
+    left:0;
+    overflow: hidden;
+    .swiper-item{
+        width: 20%;
+        float:left;
+        img{
+            display:block;
+            width:100%;
+        }
+    }
+}
+
+/*小圆点*/
+.swiper-pagination{
+    position:absolute;
+    bottom:5px;
+    width:100%;
+    text-align:center;
+    span{
+        display:inline-block;
+        width:10px;
+        height:10px;
+        background:white;
+        border-radius: 50%;
+        margin-right:5px;
+    }
+
+    .active{
+        background:deeppink;
+    }
+}

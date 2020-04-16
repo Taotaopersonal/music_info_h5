@@ -1,0 +1,367 @@
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font: 14px "Microsoft YaHei", "Arial", "黑体", sans-serif;
+  color: #333;
+}
+td,
+th,
+caption {
+  font-size: 14px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  font-size: 100%;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+img {
+  border: none;
+}
+ol,
+ul,
+li {
+  list-style: none;
+}
+input,
+textarea,
+select,
+button {
+  font: 14px "Microsoft YaHei", "Arial", "黑体", sans-serif;
+}
+table {
+  border-collapse: collapse;
+}
+/*# sourceMappingURL=reset.less.map */
+.swiper-wrapper {
+  width: 500%;
+  left: 0;
+  overflow: hidden;
+}
+.swiper-wrapper .swiper-item {
+  width: 20%;
+  float: left;
+}
+.swiper-wrapper .swiper-item img {
+  display: block;
+  width: 100%;
+}
+/*小圆点*/
+.swiper-pagination {
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  text-align: center;
+}
+.swiper-pagination span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.swiper-pagination .active {
+  background: deeppink;
+}
+html,
+body,
+#app {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+#app {
+  background: #eee;
+  /*头部样式*/
+  /*内容区 样式*/
+}
+#app #header {
+  background: #232323;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  /*上半部分*/
+  /*下半部分*/
+  /*隐藏菜单*/
+}
+#app #header .top {
+  height: 1.25rem;
+  /*logo*/
+  /*菜单按钮*/
+  /*右侧菜单*/
+}
+#app #header .top .logo {
+  width: 2.22222222rem;
+  height: 0.81481481rem;
+  padding: 0.24074074rem 0.15740741rem 0.19444444rem;
+  float: left;
+}
+#app #header .top .logo img {
+  width: 100%;
+  display: block;
+}
+#app #header .top .menu {
+  width: 1.19444444rem;
+  height: 1.25rem;
+  background: url('../imgs/menuBtn.png') no-repeat;
+  background-size: 0.75925926rem 2.15740741rem;
+  background-position: center 0.14814815rem;
+  float: left;
+}
+#app #header .top .menu.close {
+  background-position: center -1.11111111rem;
+}
+#app #header .top .btn-group {
+  padding-top: 0.19444444rem;
+  float: right;
+}
+#app #header .top .btn-group .btn {
+  width: 1.02777778rem;
+  heigth: 0.72222222rem;
+  line-height: 0.72222222rem;
+  background: #690;
+  color: #ccc;
+  margin-right: 0.13888889rem;
+  font-size: 0.38888889rem;
+  text-align: center;
+  border-radius: 0.07407407rem;
+  float: left;
+}
+#app #header .top .btn-group .search-btn {
+  width: 1.2037037rem;
+  height: 0.81481481rem;
+  line-height: 0.81481481rem;
+  background: #690;
+  margin-right: 0.27777778rem;
+  margin-top: 0.02777778rem;
+  font-weight: bold;
+  color: white;
+  border-radius: 0.09259259rem;
+  float: left;
+}
+#app #header .bottom {
+  height: 0.9537037rem;
+  /*这里高度不对 打个标记*/
+  padding: 0.14814815rem;
+  display: flex;
+  justify-content: space-between;
+  /*输入框*/
+  /*搜索按钮*/
+}
+#app #header .bottom ::-webkit-input-placeholder {
+  color: #333;
+}
+#app #header .bottom input {
+  box-sizing: border-box;
+  width: 7.67592593rem;
+  height: 0.9537037rem;
+  background: #999;
+  padding: 0.0462963rem 0.09259259rem;
+  border: solid 1px #5a5a5a;
+  font-size: 0.37962963rem;
+  color: #333;
+  border-radius: 0.13888889rem 0 0 0.13888889rem;
+}
+#app #header .bottom input:focus {
+  background: #fff;
+}
+#app #header .bottom button {
+  width: 1.87962963rem;
+  height: 0.9537037rem;
+  border: none;
+  background: #414040;
+  color: #fff;
+  font-size: 0.37962963rem;
+  border-radius: 0 0.13888889rem 0.13888889rem 0;
+}
+#app #header .hidden-menu {
+  position: absolute;
+  width: 100%;
+  top: 1.25rem;
+  padding: 0.09259259rem 0;
+  border-top: solid 1px #6a6a6a;
+  background: rgba(0, 0, 0, 0.8);
+}
+#app #header .hidden-menu li {
+  width: 22.5%;
+  height: 1.25rem;
+  line-height: 1.25rem;
+  font-size: 0.5rem;
+  text-align: center;
+  font-weight: bold;
+  float: left;
+}
+#app #header .hidden-menu li a {
+  color: white;
+  text-decoration: none;
+}
+#app #header .hidden-menu.open {
+  display: block;
+}
+#app #header .hidden-menu.close {
+  display: none;
+}
+#app #main {
+  padding-top: 2.5rem;
+  /*楼层标签页*/
+}
+#app #main #nav {
+  box-sizing: border-box;
+  height: 1.63888889rem;
+  padding-top: 0.28703704rem;
+  padding-bottom: 0.12962963rem;
+  position: relative;
+  background: #fff;
+}
+#app #main #nav .navList {
+  position: absolute;
+  white-space: nowrap;
+  font-size: 0px;
+}
+#app #main #nav .navList li {
+  display: inline-block;
+  height: 1.19444444rem;
+  line-height: 1.19444444rem;
+  font-size: 0.625rem;
+  padding: 0 0.35185185rem;
+}
+#app #main #nav .navList li a {
+  color: #020202;
+}
+#app #main #nav .navList .active {
+  background: #690;
+}
+#app #main #nav .navList .active a {
+  color: white;
+}
+#app #main .floor {
+  width: 9.68518519rem;
+  background: #fff;
+  margin: 0 auto;
+  /*头部*/
+  /*导航*/
+  /*标签页内容 轮播图区域*/
+}
+#app #main .floor header {
+  height: 1.25rem;
+  line-height: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+}
+#app #main .floor header h2 {
+  font-size: 0.68518519rem;
+  font-weight: bold;
+  color: #000;
+}
+#app #main .floor nav {
+  height: 0.97222222rem;
+  line-height: 0.97222222rem;
+  position: relative;
+  /*可移动边框*/
+}
+#app #main .floor nav .nav-item {
+  height: 0.97222222rem;
+  width: 1.11111111rem;
+  text-align: center;
+  color: #6b6b6b;
+  font-size: 0.40740741rem;
+  float: left;
+}
+#app #main .floor nav .move-border {
+  width: 1.11111111rem;
+  height: 0.08333333rem;
+  background: #6f900d;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  transition: all 0.5s;
+}
+#app #main .floor section .swiper-wrapper .swiper-item {
+  /*loading gif 图片*/
+}
+#app #main .floor section .swiper-wrapper .swiper-item .item {
+  box-sizing: border-box;
+  width: 4.68518519rem;
+  margin: 0.07407407rem;
+  padding: 0.0462963rem;
+  font-size: 0.37037037rem;
+  background: #efefef;
+  color: #000;
+  float: left;
+}
+#app #main .floor section .swiper-wrapper .swiper-item .item .info {
+  display: flex;
+  justify-content: flex-start;
+}
+#app #main .floor section .swiper-wrapper .swiper-item .item .info .icon {
+  width: 0.55555556rem;
+  height: 0.46296296rem;
+  background: url('../imgs/ice.png') no-repeat;
+}
+#app #main .floor section .swiper-wrapper .swiper-item .item .info .play {
+  display: flex;
+  justify-content: flex-start;
+}
+#app #main .floor section .swiper-wrapper .swiper-item .item .info .play .icon {
+  background-position: center 0.11111111rem;
+}
+#app #main .floor section .swiper-wrapper .swiper-item .item .info .comment {
+  display: flex;
+  justify-content: flex-start;
+}
+#app #main .floor section .swiper-wrapper .swiper-item .item .info .comment .icon {
+  background-position: center -0.40740741rem;
+}
+#app #main .floor section .swiper-wrapper .swiper-item .loading {
+  width: 100%;
+  height: 0.93518519rem;
+  background: url('../imgs/loading.gif') no-repeat;
+  background-position: center center;
+}

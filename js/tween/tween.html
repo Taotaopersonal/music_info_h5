@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>tween</title>
+    <style>
+        #box {
+            width: 200px;
+            height: 200px;
+            background: #562;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        button {
+            position: absolute;
+            left: 0px;
+            top: 220px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="box"></div>
+
+<button>点击启动变化</button>
+<script>
+    // 2s 内  left  0  =>  500
+    //函数能计算出 每个时刻应该在的位置
+    /**
+     *
+     * @param t   当前时间
+     * @param b   初始的状态
+     * @param c   变化量 变化值  500
+     * @param d   持续时间(动画时间)
+     * @returns {*}
+     */
+    var tween = function (t, b, c, d, s) {
+        if (s == undefined) s = 1.70158;
+        return c * ((t = t / d - 1) * t * ((s + 1) * t + s) + 1) + b;
+    }
+
+    var box = document.querySelector('#box');
+    // //0ms
+    // var left = tween(0, 0, 500, 2000);
+    // console.log(left);
+    //
+    // //500ms
+    // var left = tween(500, 0, 500, 2000);
+    // console.log(left);
+    //
+    // //800ms
+    // var left = tween(800, 0, 500, 2000);
+    // console.log(left);
+    //
+    // //2000ms
+    // var left = tween(2000, 0, 500, 2000);
+    // console.log(left);
+
+    //第一个示例
+    // var t = 0;
+    // //定时器来完成时间的设置
+    // var timer = setInterval(function(){
+    //     //时间的累加
+    //     t += 20;
+    //     //计算
+    //     var left = tween(t, 0, 500, 2000);
+    //     //设置left
+    //     box.style.left = left + 'px';
+    //     //根据时间 t
+    //     if(t >= 2000){
+    //         clearInterval(timer);
+    //     }
+    // }, 20);
+
+
+    // 2.  3s  宽度 从 200 ->  800
+
+    var btn = document.querySelector('button');
+    // 0 准备函数的数据
+    var timer = null;
+    var t = 0;
+    var b = 200;
+    var c = 800 - 200;
+    var d = 3000;
+    var step = 20;
+
+    btn.onclick = function () {
+        timer = setInterval(function () {
+            //0. 清空定时器
+            if (t >= d) {
+                clearInterval(timer);
+                return;
+            }
+            //1. 时间自增
+            t += step;
+            //2. 通过函数计算
+            var res = tween(t, b, c, d);
+            //3. 设置 css 样式
+            box.style.width = res + 'px';
+        }, step);
+    }
+
+    //box 绑定单击事件
+    box.onclick = function () {
+        clearInterval(timer);
+    }
+
+
+</script>
+</body>
+</html>

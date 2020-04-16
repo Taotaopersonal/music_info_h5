@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #box {
+            width: 100px;
+            height: 100px;
+            background: #521;
+        }
+
+        #box2 {
+            width: 100px;
+            height: 100px;
+            background: #058;
+        }
+    </style>
+</head>
+<body>
+<div id="box"></div>
+<div id="box2"></div>
+
+<script src="./transformCSS.js"></script>
+<script src="./tweenAnimation.js"></script>
+<script>
+    /*宽度设置 2s 100 -> 800*/
+    var box = document.querySelector('#box');
+    var box2 = document.querySelector('#box2');
+
+    //两个元素对比
+    // tweenAnimation(box, 'width', 100, 800, 2000, 20, 'linear');
+    // tweenAnimation(box2, 'width', 100, 800, 2000, 20, 'linear');
+    // tweenAnimation(box, 'translateX', 0, 500, 1000, 20, 'back');
+
+    //单个元素操作
+    tweenAnimation(box, 'width', 100, 500, 2000, 20, 'linear');
+    tweenAnimation(box, 'translateX', 0, 500, 2000, 20, 'linear');
+
+
+    box.addEventListener('click', function () {
+        //停止定时器 ???
+        clearInterval(box.timer['width']);
+        clearInterval(box.timer['translateX']);
+    });
+
+    box2.addEventListener('click', function () {
+        //停止定时器 ???
+        clearInterval(box2.timer);
+    });
+</script>
+</body>
+</html>

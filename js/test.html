@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+    function Person(name,age){
+        this.name = name;
+        this.age = age;
+        this.run = function(){
+            console.log('我正在奔跑')
+        }
+
+        this.getName = function(){
+            return this.name;
+        }
+
+        var info = '今天是礼拜六, 明天就能嗨了!!!';
+
+        function date(){
+            console.log('我可以约会哦!!!');
+        }
+
+        this.info = info;
+        this.date = date;
+    }
+
+    var me = new Person('xiaohigh',28);
+
+    console.log(me);
+
+    console.log(me.getName());
+
+    function Test(){
+        var age = 18;
+
+        this.age = age;
+
+        age = 19;
+    }
+
+    var n = new Test;
+    console.log(n.age);
+
+    ///--------------------------------------------
+
+
+
+</script>
+</body>
+</html>

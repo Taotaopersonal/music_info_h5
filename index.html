@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>谷粒音乐</title>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<div id="app">
+    <!--头部 start-->
+    <header id="header">
+        <!--上半部分 start-->
+        <div class="top">
+            <div class="logo">
+                <img src="imgs/logo.png" alt="">
+            </div>
+            <div class="menu "></div>
+            <div class="btn-group">
+                <div class="btn search-btn">搜索</div>
+                <div class="btn">登录</div>
+                <div class="btn">注册</div>
+            </div>
+        </div>
+        <!--上半部分 end-->
+
+        <!--下半部分 start-->
+        <div class="bottom">
+            <input type="text" placeholder="请输入搜索内容...">
+            <button>搜索</button>
+        </div>
+        <!--下半部分 end-->
+
+        <!--隐藏菜单 start-->
+        <ul class="hidden-menu close">
+            <li>
+                <a href="javascript:">首页</a>
+            </li>
+            <li>
+                <a href="javascript:">MV</a>
+            </li>
+            <li>
+                <a href="javascript:">悦单</a>
+            </li>
+            <li>
+                <a href="javascript:">V榜</a>
+            </li>
+            <li>
+                <a href="javascript:">音悦</a>
+            </li>
+            <li>
+                <a href="javascript:">商城</a>
+            </li>
+            <li>
+                <a href="javascript:">节目</a>
+            </li>
+            <li>
+                <a href="javascript:">饭团</a>
+            </li>
+            <li>
+                <a href="javascript:">资讯</a>
+            </li>
+            <li>
+                <a href="javascript:">我的家</a>
+            </li>
+            <li>
+                <a href="javascript:">APP下载</a>
+            </li>
+            <li>
+                <a href="javascript:">热门应用</a>
+            </li>
+        </ul>
+        <!--隐藏菜单 end-->
+    </header>
+    <!--头部 end-->
+
+    <!--内容区 start-->
+    <main id="main">
+        <!--导航 start-->
+        <nav id="nav">
+            <ul class="navList">
+                <li class="active">
+                    <a href="javascript:">首页</a>
+                </li>
+                <li>
+                    <a href="javascript:">MV</a>
+                </li>
+                <li>
+                    <a href="javascript:">悦单</a>
+                </li>
+                <li>
+                    <a href="javascript:">V榜</a>
+                </li>
+                <li>
+                    <a href="javascript:">音悦</a>
+                </li>
+                <li>
+                    <a href="javascript:">商城</a>
+                </li>
+                <li>
+                    <a href="javascript:">节目</a>
+                </li>
+                <li>
+                    <a href="javascript:">饭团</a>
+                </li>
+                <li>
+                    <a href="javascript:">资讯</a>
+                </li>
+                <li>
+                    <a href="javascript:">我的家</a>
+                </li>
+                <li>
+                    <a href="javascript:">APP下载</a>
+                </li>
+                <li>
+                    <a href="javascript:">热门应用</a>
+                </li>
+            </ul>
+        </nav>
+        <!--导航 end-->
+
+        <!--轮播图 start-->
+        <div id="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-item"><img src="imgs/1.jpg" alt=""></div>
+                <div class="swiper-item"><img src="imgs/2.jpg" alt=""></div>
+                <div class="swiper-item"><img src="imgs/3.jpg" alt=""></div>
+                <div class="swiper-item"><img src="imgs/4.jpg" alt=""></div>
+                <div class="swiper-item"><img src="imgs/5.jpg" alt=""></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <!--轮播图 end-->
+
+        <!--标签页 楼层 start-->
+        <div class="floor">
+            <header>
+                <h2>MV首播</h2>
+                <span>更多 &gt;</span>
+            </header>
+
+            <nav>
+                <div class="nav-item" data-index="0">内地</div>
+                <div class="nav-item" data-index="1">港台</div>
+                <div class="nav-item" data-index="2">欧美</div>
+                <div class="nav-item" data-index="3">日韩</div>
+                <div class="move-border"></div>
+            </nav>
+
+            <section class="container">
+                <div class="swiper-wrapper">
+                    <div is-loaded="1" class="swiper-item">
+                        <div class="item">
+                            <img src="./imgs/a.jpg" alt="">
+                            <h4>恶人转</h4>
+                            <div class="info">
+                                <div class="play">
+                                    <div class="icon"></div>
+                                    <span>1024</span>
+                                </div>
+                                <div class="comment">
+                                    <div class="icon"></div>
+                                    <span>9527</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./imgs/a.jpg" alt="">
+                            <h4>恶人转</h4>
+                            <div class="info">
+                                <div class="play">
+                                    <div class="icon"></div>
+                                    <span>1024</span>
+                                </div>
+                                <div class="comment">
+                                    <div class="icon"></div>
+                                    <span>9527</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./imgs/a.jpg" alt="">
+                            <h4>恶人转</h4>
+                            <div class="info">
+                                <div class="play">
+                                    <div class="icon"></div>
+                                    <span>1024</span>
+                                </div>
+                                <div class="comment">
+                                    <div class="icon"></div>
+                                    <span>9527</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./imgs/a.jpg" alt="">
+                            <h4>恶人转</h4>
+                            <div class="info">
+                                <div class="play">
+                                    <div class="icon"></div>
+                                    <span>1024</span>
+                                </div>
+                                <div class="comment">
+                                    <div class="icon"></div>
+                                    <span>9527</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./imgs/a.jpg" alt="">
+                            <h4>恶人转</h4>
+                            <div class="info">
+                                <div class="play">
+                                    <div class="icon"></div>
+                                    <span>1024</span>
+                                </div>
+                                <div class="comment">
+                                    <div class="icon"></div>
+                                    <span>9527</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./imgs/a.jpg" alt="">
+                            <h4>恶人转</h4>
+                            <div class="info">
+                                <div class="play">
+                                    <div class="icon"></div>
+                                    <span>1024</span>
+                                </div>
+                                <div class="comment">
+                                    <div class="icon"></div>
+                                    <span>9527</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div is-loaded="0" class="swiper-item">
+                        <div class="loading"></div>
+                    </div>
+                    <div is-loaded="0" class="swiper-item">
+                        <div class="loading"></div>
+                    </div>
+                    <div is-loaded="0" class="swiper-item">
+                        <div class="loading"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="floor">
+            <header>
+                <h2>MV首播</h2>
+                <span>更多 &gt;</span>
+            </header>
+
+            <nav>
+                <div class="nav-item" data-index="0">内地</div>
+                <div class="nav-item" data-index="1">港台</div>
+                <div class="nav-item" data-index="2">欧美</div>
+                <div class="nav-item" data-index="3">日韩</div>
+                <div class="move-border"></div>
+            </nav>
+
+            <section class="container">
+                <div class="swiper-wrapper">
+                    <div is-loaded="1" class="swiper-item">
+                        <div class="item">
+                            <img src="./imgs/a.jpg" alt="">
+                            <h4>恶人转</h4>
+                            <div class="info">
+                                <div class="play">
+                                    <div class="icon"></div>
+                                    <span>1024</span>
+                                </div>
+                                <div class="comment">
+                                    <div class="icon"></div>
+                                    <span>9527</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./imgs/a.jpg" alt="">
+                            <h4>恶人转</h4>
+                            <div class="info">
+                                <div class="play">
+                                    <div class="icon"></div>
+                                    <span>1024</span>
+                                </div>
+                                <div class="comment">
+                                    <div class="icon"></div>
+                                    <span>9527</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./imgs/a.jpg" alt="">
+                            <h4>恶人转</h4>
+                            <div class="info">
+                                <div class="play">
+                                    <div class="icon"></div>
+                                    <span>1024</span>
+                                </div>
+                                <div class="comment">
+                                    <div class="icon"></div>
+                                    <span>9527</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./imgs/a.jpg" alt="">
+                            <h4>恶人转</h4>
+                            <div class="info">
+                                <div class="play">
+                                    <div class="icon"></div>
+                                    <span>1024</span>
+                                </div>
+                                <div class="comment">
+                                    <div class="icon"></div>
+                                    <span>9527</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./imgs/a.jpg" alt="">
+                            <h4>恶人转</h4>
+                            <div class="info">
+                                <div class="play">
+                                    <div class="icon"></div>
+                                    <span>1024</span>
+                                </div>
+                                <div class="comment">
+                                    <div class="icon"></div>
+                                    <span>9527</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./imgs/a.jpg" alt="">
+                            <h4>恶人转</h4>
+                            <div class="info">
+                                <div class="play">
+                                    <div class="icon"></div>
+                                    <span>1024</span>
+                                </div>
+                                <div class="comment">
+                                    <div class="icon"></div>
+                                    <span>9527</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div is-loaded="0" class="swiper-item">
+                        <div class="loading"></div>
+                    </div>
+                    <div is-loaded="0" class="swiper-item">
+                        <div class="loading"></div>
+                    </div>
+                    <div is-loaded="0" class="swiper-item">
+                        <div class="loading"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="floor">
+            <header>
+                <h2>MV首播</h2>
+                <span>更多 &gt;</span>
+            </header>
+
+            <nav>
+                <div class="nav-item" data-index="0">内地</div>
+                <div class="nav-item" data-index="1">港台</div>
+                <div class="nav-item" data-index="2">欧美</div>
+                <div class="nav-item" data-index="3">日韩</div>
+                <div class="move-border"></div>
+            </nav>
+
+            <section class="container">
+                <div class="swiper-wrapper">
+                    <div is-loaded="1" class="swiper-item">
+                        <div class="item">
+                            <img src="./imgs/a.jpg" alt="">
+                            <h4>恶人转</h4>
+                            <div class="info">
+                                <div class="play">
+                                    <div class="icon"></div>
+                                    <span>1024</span>
+                                </div>
+                                <div class="comment">
+                                    <div class="icon"></div>
+                                    <span>9527</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./imgs/a.jpg" alt="">
+                            <h4>恶人转</h4>
+                            <div class="info">
+                                <div class="play">
+                                    <div class="icon"></div>
+                                    <span>1024</span>
+                                </div>
+                                <div class="comment">
+                                    <div class="icon"></div>
+                                    <span>9527</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./imgs/a.jpg" alt="">
+                            <h4>恶人转</h4>
+                            <div class="info">
+                                <div class="play">
+                                    <div class="icon"></div>
+                                    <span>1024</span>
+                                </div>
+                                <div class="comment">
+                                    <div class="icon"></div>
+                                    <span>9527</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./imgs/a.jpg" alt="">
+                            <h4>恶人转</h4>
+                            <div class="info">
+                                <div class="play">
+                                    <div class="icon"></div>
+                                    <span>1024</span>
+                                </div>
+                                <div class="comment">
+                                    <div class="icon"></div>
+                                    <span>9527</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./imgs/a.jpg" alt="">
+                            <h4>恶人转</h4>
+                            <div class="info">
+                                <div class="play">
+                                    <div class="icon"></div>
+                                    <span>1024</span>
+                                </div>
+                                <div class="comment">
+                                    <div class="icon"></div>
+                                    <span>9527</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./imgs/a.jpg" alt="">
+                            <h4>恶人转</h4>
+                            <div class="info">
+                                <div class="play">
+                                    <div class="icon"></div>
+                                    <span>1024</span>
+                                </div>
+                                <div class="comment">
+                                    <div class="icon"></div>
+                                    <span>9527</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div is-loaded="0" class="swiper-item">
+                        <div class="loading"></div>
+                    </div>
+                    <div is-loaded="0" class="swiper-item">
+                        <div class="loading"></div>
+                    </div>
+                    <div is-loaded="0" class="swiper-item">
+                        <div class="loading"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!--标签页 楼层 end-->
+    </main>
+    <!--内容区 end-->
+
+</div>
+<script src="js/transformCSS.js"></script>
+<script src="js/swiper.js"></script>
+<script src="./js/tweenAnimation.js"></script>
+<script src="./js/touchscroll.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

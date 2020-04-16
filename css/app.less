@@ -1,0 +1,303 @@
+@import 'reset';
+@import 'swiper';
+//根标签大小设置
+@font-size: 1080 / 10rem;
+
+html, body, #app {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.bg(@color) {
+    background: @color;
+}
+
+#app {
+    background: #eee;
+    /*头部样式*/
+    #header {
+        background: #232323;
+        position: fixed;
+        z-index:2;
+        width:100%;
+        /*上半部分*/
+
+        .top {
+            height: 135/@font-size;
+            /*logo*/
+
+            .logo {
+                width: 240/@font-size;
+                height: 88/@font-size;
+                padding: 26/@font-size 17/@font-size 21/@font-size;
+                float: left;
+
+                img {
+                    width: 100%;
+                    display: block;
+                }
+
+            }
+
+            /*菜单按钮*/
+
+            .menu {
+                width: 129/@font-size;
+                height: 135/@font-size;
+                background: url('../imgs/menuBtn.png') no-repeat;
+                background-size: 82/@font-size 233/@font-size;
+                background-position: center 16/@font-size;
+                float: left;
+
+                &.close {
+                    background-position: center -120/@font-size;
+                }
+            }
+
+            /*右侧菜单*/
+
+            .btn-group {
+                padding-top: 21/@font-size;
+                float: right;
+
+                .btn {
+                    width: 111/@font-size;
+                    heigth: 78/@font-size;
+                    line-height: 78/@font-size;
+                    background: #690;
+                    color: #ccc;
+                    margin-right: 15/@font-size;
+                    font-size: 42/@font-size;
+                    text-align: center;
+                    border-radius: 8/@font-size;
+                    float: left;
+                }
+
+                .search-btn {
+                    width: 130/@font-size;
+                    height: 88/@font-size;
+                    line-height: 88/@font-size;
+                    background: #690;
+                    margin-right: 30/@font-size;
+                    margin-top: 3/@font-size;
+                    font-weight: bold;
+                    color: white;
+                    border-radius: 10/@font-size;
+                    float: left;
+                }
+
+
+            }
+        }
+
+        /*下半部分*/
+
+        .bottom {
+            height: 103/@font-size; /*这里高度不对 打个标记*/
+            padding: 16/@font-size;
+            display: flex;
+            justify-content: space-between;
+
+            ::-webkit-input-placeholder {
+                color: #333;
+            }
+
+            /*输入框*/
+
+            input {
+                box-sizing: border-box;
+                width: 829/@font-size;
+                height: 103/@font-size;
+                background: #999;
+                padding: 5/@font-size 10/@font-size;
+                border: solid 1px #5a5a5a;
+                font-size: 41/@font-size;
+                color: #333;
+                border-radius: 15/@font-size 0 0 15/@font-size;
+
+                &:focus {
+                    .bg(#fff);
+                }
+            }
+
+            /*搜索按钮*/
+
+            button {
+                width: 203/@font-size;
+                height: 103/@font-size;
+                border: none;
+                .bg(#414040);
+                color: #fff;
+                font-size: 41/@font-size;
+                border-radius: 0 15/@font-size 15/@font-size 0;
+            }
+        }
+
+        /*隐藏菜单*/
+
+        .hidden-menu {
+            position: absolute;
+            width: 100%;
+            top: 135/@font-size;
+            padding: 10/@font-size 0;
+            border-top: solid 1px #6a6a6a;
+            background: rgba(0, 0, 0, 0.8);
+
+            li {
+                width: 22.5%;
+                height: 135/@font-size;
+                line-height: 135/@font-size;
+                font-size: 54/@font-size;
+                text-align: center;
+                font-weight: bold;
+                float: left;
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+
+            &.open {
+                display: block;
+            }
+
+            &.close {
+                display: none
+            }
+
+        }
+    }
+
+    /*内容区 样式*/
+    #main{
+        padding-top:270/@font-size;
+
+        #nav{
+            box-sizing: border-box;
+            height: 177/@font-size;
+            padding-top:31/@font-size;
+            padding-bottom: 14/@font-size;
+            position:relative;
+            .bg(#fff);
+            .navList{
+                position:absolute;
+                white-space: nowrap;
+                font-size:0px;
+                li{
+                    display:inline-block;
+                    height:129/@font-size;
+                    line-height:129/@font-size;
+                    font-size:67.5/@font-size;
+                    padding:0 38/@font-size;
+                    a{
+                        color:#020202;
+                    }
+                }
+                .active{
+                    background:#690;
+                    a{
+                        color:white;
+                    }
+                }
+            }
+        }
+
+        /*楼层标签页*/
+        .floor{
+            width:1046/@font-size;
+            .bg(#fff);
+            margin: 0 auto;
+            /*头部*/
+            header{
+                height:135/@font-size;
+                line-height:135/@font-size;
+                display:flex;
+                justify-content: space-between;
+                h2{
+                    font-size: 74/@font-size;
+                    font-weight: bold;
+                    color:#000;
+                }
+            }
+            /*导航*/
+            nav{
+                height:105/@font-size;
+                line-height:105/@font-size;
+                position:relative;
+                .nav-item{
+                    height:105/@font-size;
+                    width:120/@font-size;
+                    text-align: center;
+                    color:#6b6b6b;
+                    font-size:44/@font-size;
+                    float:left;
+                }
+                /*可移动边框*/
+                .move-border{
+                    width:120/@font-size;
+                    height:9/@font-size;
+                    .bg(#6f900d);
+                    position:absolute;
+                    bottom:0px;
+                    left:0px;
+                    transition:all 0.5s;
+                }
+            }
+            /*标签页内容 轮播图区域*/
+            section{
+                .swiper-wrapper{
+                    .swiper-item{
+                        .item{
+                            box-sizing: border-box;
+                            width:506/@font-size;
+                            margin: 8/@font-size;
+                            padding:5/@font-size;
+                            font-size:40/@font-size;
+                            background:#efefef;
+                            color:#000;
+                            float:left;
+
+                            .info{
+                                display:flex;
+                                justify-content: flex-start;
+                                .icon{
+                                    width:60/@font-size;
+                                    height:50/@font-size;
+                                    background:url('../imgs/ice.png') no-repeat;
+                                }
+
+                                .play{
+                                    display:flex;
+                                    justify-content: flex-start;
+                                    .icon{
+                                        background-position: center 12/@font-size;
+                                    }
+                                }
+
+                                .comment{
+                                    display:flex;
+                                    justify-content: flex-start;
+                                    .icon{
+                                        background-position: center -44/@font-size;
+                                    }
+                                }
+                            }
+
+                        }
+
+                        /*loading gif 图片*/
+                        .loading{
+                            width:100%;
+                            height:101/@font-size;
+                            background:url('../imgs/loading.gif') no-repeat;
+                            background-position: center center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
